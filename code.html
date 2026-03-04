@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pizzeria Prado - Menu</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#ec3713",
+              "background-light": "#f8f6f6",
+              "background-dark": "#221310",
+              "terracotta": "#c04d30",
+              "sage": "#4a5d4e",
+              "cream": "#fdfaf1"
+            },
+            fontFamily: {
+              "display": ["Be Vietnam Pro", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-6 py-4 lg:px-20 bg-cream/80 backdrop-blur-md sticky top-0 z-50 dark:bg-background-dark/80">
+<div class="flex items-center gap-3 text-primary">
+<div class="size-8 flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl">local_pizza</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-black leading-tight tracking-tight">Pizzeria Prado</h2>
+</div>
+<nav class="hidden md:flex flex-1 justify-center gap-10">
+<a class="text-slate-700 dark:text-slate-300 text-sm font-bold hover:text-primary transition-colors" href="#menu">Menu</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-bold hover:text-primary transition-colors" href="#">Nosotros</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-bold hover:text-primary transition-colors" href="#">Ubicación</a>
+</nav>
+<div class="flex items-center gap-4">
+</div>
+<button class="md:hidden flex items-center justify-center text-slate-900 dark:text-slate-100">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-1">
+<section class="p-4 lg:p-10">
+<div class="relative flex min-h-[520px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl items-center justify-center p-8 text-center" data-alt="Delicious fresh wood-fired pizza with melting cheese" style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuD_hrsOzj2V9vLr0j_y5HZW790ZhZ8nE1-UssCySaEp-WWrc7d3vGv6ssVb437QiPl4O-ojAH7EiV92valdundo70VotuBuPymx05qssr81Ua7UWjRF0HJxs4-kCgcGtzoAiCBe5RdPk14L_7fDJME9l6_rUs6hRO4HZ4c-MWSenS9mc_7X3AeoaIRKfZ16sYsZuHCXWo-RtdHwEgCmmZp1cReTkjW4uzWo3WTJSJHUjqAcWrU7jWOyPEUnn56H5rZDttMGynvEQio");'>
+<div class="flex flex-col gap-4 max-w-3xl">
+<span class="text-primary font-bold tracking-widest uppercase text-sm">Authentic Italian Tradition</span>
+<h1 class="text-white text-5xl md:text-7xl font-black leading-tight tracking-tight">
+                            Experience the Art of Wood-Fired Pizza
+                        </h1>
+<p class="text-slate-200 text-lg md:text-xl font-medium max-w-2xl mx-auto">
+                            Handcrafted with passion, topped with the finest San Marzano tomatoes, and baked to smoky perfection in our traditional stone oven.
+                        </p>
+</div>
+<div class="flex flex-wrap gap-4 justify-center mt-4">
+<a class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-full h-14 px-8 bg-primary text-white text-lg font-bold shadow-lg shadow-primary/30 hover:scale-105 transition-transform" href="#menu">
+                            View Full Menu
+                        </a>
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-full h-14 px-8 bg-white/10 backdrop-blur-md text-white border border-white/30 text-lg font-bold hover:bg-white/20 transition-all">
+                            Our Story
+                        </button>
+</div>
+</div>
+</section>
+<section class="max-w-[1200px] mx-auto px-6 py-16" id="menu">
+<div class="text-center mb-16">
+<h2 class="text-terracotta text-4xl md:text-5xl font-black mb-4">Menú</h2>
+<div class="h-1.5 w-24 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="mb-20">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-primary text-3xl">local_pizza</span>
+<h3 class="text-2xl md:text-3xl font-bold text-slate-800 dark:text-slate-100">Signature Pizzas</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4 bg-white dark:bg-background-dark/40 p-5 rounded-xl border border-primary/5 shadow-sm">
+<div class="overflow-hidden rounded-lg aspect-[4/3]">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjVzNLpkZN64m9M_HLsXspjmPCpM_NXmg69SSwl6V-DfN_zV7xeeHYdi-BsQiap2SZSPliU2DFjlXeXwkueBYoJ3b4RV5EYwrSa607-Aq9JwfvQ0v-5Na2jXcOnR8PrHRRzObbgA_bTJYaXE06R_G-dUXfrLdPiM49lnj1aAhHpLaBos5A2Wyy005GSDnH9bfKk-ekHRtEEORXeJbln2JfB7ULrPicZFZiXoaEoKZoJo2Su7vEz58KjiTroqhOXZ4ssqcK7riKQ3o");'></div>
+</div>
+<div>
+<div class="flex justify-between items-center mb-2">
+<h4 class="text-xl font-bold">Classic Margherita</h4>
+<span class="text-terracotta font-bold">$14.00</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm">San Marzano tomatoes, fresh mozzarella di bufala, fresh basil, and extra virgin olive oil.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 bg-white dark:bg-background-dark/40 p-5 rounded-xl border border-primary/5 shadow-sm">
+<div class="overflow-hidden rounded-lg aspect-[4/3]">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDQWlJ4kHeX2_lvpC4Jakq5Hjzi1dpQDKHSmvgK0W3f9iwcS1kY2qIc7t2MGZfgIAD96M0MZAUpl_M5v72lsYHX9qIVY1d8qQOkcyAp566hRt9PyjHxwY6Z89c3FXutVNmTh-Bp-Id21hJWGVP083SEIN8mpd0Hof1v9505thfX2cEa7wmXTCjj5zSZ6_zFmyrY30PC-m9FIDCZRR5Fndp-zeyJIZrelQNVImclpJj4zhsJOx-hN4ka6TbAOOXAaRxCNOMgU7MdBRw");'></div>
+</div>
+<div>
+<div class="flex justify-between items-center mb-2">
+<h4 class="text-xl font-bold">Spicy Diavola</h4>
+<span class="text-terracotta font-bold">$16.50</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Spicy Calabrese salami, crushed chili flakes, mozzarella, and red onion.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 bg-white dark:bg-background-dark/40 p-5 rounded-xl border border-primary/5 shadow-sm">
+<div class="overflow-hidden rounded-lg aspect-[4/3]">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDAeeaiW4FwhVVDjNmixTQ2OyX0xX669iV0GzZJkPqXTYQEJKedpfe64IJIK7qUO9R4BTdO7KYOP84yOsTVW9big9VLxQC6j3u-Qz0Zjwvt0lLpvPHmzib0dKyi6a6fGkbaJsgrA_L6rxmGwKphOHq0WOkBttag3g-czI44MODJhc_X-zBb0EhTQ901cECpWYfshod2_nMjrQPn3HLKX3v6V9s6kNNF3x-ovH1uDGoV4WilpPDOn_oS_WOMCAuzNib5OVF90xEQ0dw");'></div>
+</div>
+<div>
+<div class="flex justify-between items-center mb-2">
+<h4 class="text-xl font-bold">Quattro Formaggi</h4>
+<span class="text-terracotta font-bold">$18.00</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Mozzarella, gorgonzola dolce, aged parmesan, and creamy fontina cheese.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mb-20">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-primary text-3xl">lunch_dining</span>
+<h3 class="text-2xl md:text-3xl font-bold text-slate-800 dark:text-slate-100">Gourmet Burgers</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex items-center gap-6 bg-white dark:bg-background-dark/40 p-5 rounded-xl border border-primary/5 shadow-sm">
+<div class="w-32 h-32 flex-shrink-0 overflow-hidden rounded-lg">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC-YmB69qoNu8M2mhrC5pjuu7bybFJuuEoNeA4pqpPnzj9RvkI7ye5TH64qLI1O6qfRareJMNOWxOi6h7Mqv0HzNyjQY3LM3n5cHVTGNuReoguf_mP3dAia3p1okx45BZ2UaEc-6g9OTmW6Z7BRFeXK0ehp_z4imF5tbMH_xbl6jQDshDzyrZeeGtqrUTc0coX3zxr-rAvAaIXSro3ozOZiYzRqy7D_KLU_FAFaeezziRMNeLUuNlRLz30GjdQ0PIuqujC-lCaktA4");'></div>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-1">
+<h4 class="text-xl font-bold">Prado Truffle Burger</h4>
+<span class="text-terracotta font-bold">$17.00</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Prime beef, truffle aioli, wild mushrooms, and melted provolone on brioche.</p>
+</div>
+</div>
+<div class="flex items-center gap-6 bg-white dark:bg-background-dark/40 p-5 rounded-xl border border-primary/5 shadow-sm">
+<div class="w-32 h-32 flex-shrink-0 overflow-hidden rounded-lg">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB9VKhP1wtVxIVgNfcHKZr7x-9jEgbZvWEsafLK6pROfyG-FPOhAq67WEQuf8DT209kgo-z99tNT45ANI8v6snGeosrrrlN7QDz4MVHpszHDrQQXZoZjfAHYOUa4rptB2EWWpuMEuo3H7lmF6uDIgUfmH3LnyjFqLeyZ8v5eJn872ia4_CnR-cTissHpmLL-TDopp52tYBhsgY1fFwcN4Dt11M-G1CQUzRpuDnNBc_QerNC45-FC0sHfus7lzCs_mkUX9YsAU_C9dE");'></div>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-1">
+<h4 class="text-xl font-bold">Spicy Italian Burger</h4>
+<span class="text-terracotta font-bold">$15.50</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Beef patty, spicy nduja spread, arugula, and roasted peppers.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div>
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-primary text-3xl">local_bar</span>
+<h3 class="text-2xl md:text-3xl font-bold text-slate-800 dark:text-slate-100">Soft Drinks</h3>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-center p-4 bg-white dark:bg-background-dark/40 rounded-lg border-l-4 border-primary shadow-sm">
+<div>
+<p class="font-bold">San Pellegrino Sparkling Fruit</p>
+<p class="text-xs text-slate-500 italic">Aranciata, Limonata, or Melograno</p>
+</div>
+<span class="text-terracotta font-bold">$4.50</span>
+</div>
+<div class="flex justify-between items-center p-4 bg-white dark:bg-background-dark/40 rounded-lg border-l-4 border-primary shadow-sm">
+<div>
+<p class="font-bold">House-made Italian Soda</p>
+<p class="text-xs text-slate-500 italic">Blood Orange or Wild Berry</p>
+</div>
+<span class="text-terracotta font-bold">$5.00</span>
+</div>
+<div class="flex justify-between items-center p-4 bg-white dark:bg-background-dark/40 rounded-lg border-l-4 border-primary shadow-sm">
+<div>
+<p class="font-bold">Mineral Water (Still/Sparkling)</p>
+<p class="text-xs text-slate-500 italic">500ml glass bottle</p>
+</div>
+<span class="text-terracotta font-bold">$3.50</span>
+</div>
+</div>
+</div>
+<div>
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-primary text-3xl">restaurant</span>
+<h3 class="text-2xl md:text-3xl font-bold text-slate-800 dark:text-slate-100">Other Favorites</h3>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-center p-4 bg-white dark:bg-background-dark/40 rounded-lg border-l-4 border-sage shadow-sm">
+<div>
+<p class="font-bold">Crispy Calamari Fritti</p>
+<p class="text-xs text-slate-500 italic">Served with spicy marinara sauce</p>
+</div>
+<span class="text-terracotta font-bold">$12.00</span>
+</div>
+<div class="flex justify-between items-center p-4 bg-white dark:bg-background-dark/40 rounded-lg border-l-4 border-sage shadow-sm">
+<div>
+<p class="font-bold">Traditional Tiramisu</p>
+<p class="text-xs text-slate-500 italic">Espresso-soaked ladyfingers and mascarpone</p>
+</div>
+<span class="text-terracotta font-bold">$9.00</span>
+</div>
+<div class="flex justify-between items-center p-4 bg-white dark:bg-background-dark/40 rounded-lg border-l-4 border-sage shadow-sm">
+<div>
+<p class="font-bold">Burrata &amp; Prosciutto</p>
+<p class="text-xs text-slate-500 italic">Aged balsamic glaze and toasted focaccia</p>
+</div>
+<span class="text-terracotta font-bold">$15.00</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-sage/10 py-16">
+<div class="max-w-[1200px] mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-6">
+<h2 class="text-sage text-3xl md:text-4xl font-black">Find Us Near You</h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                            Visit our traditional wood-fired ovens at any of our three locations. We bring the heart of Italy to your neighborhood.
+                        </p>
+<div class="flex flex-col gap-4">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div>
+<p class="font-bold">Downtown Flagship</p>
+<p class="text-sm text-slate-500">123 Via Roma, City Center</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div>
+<p class="font-bold">West End Kitchen</p>
+<p class="text-sm text-slate-500">456 Olive Grove Ave, West End</p>
+</div>
+</div>
+</div>
+<button class="mt-4 self-start px-8 py-3 rounded-full bg-sage text-white font-bold hover:bg-sage/90 transition-all shadow-md">
+                            All Locations
+                        </button>
+</div>
+<div class="rounded-xl overflow-hidden h-[300px] md:h-[400px] shadow-lg border-4 border-white dark:border-background-dark">
+<div class="w-full h-full bg-slate-200 bg-center bg-cover" data-alt="Map showing Pizzeria Prado locations" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBEKnkNdPayF3TVrWeqXwFfcN3koQnZ3mkqsVwa4ft6MrGWIOOxMKnJHrJlDaQqS9qA8HELux1SdQ-Z5N5jqryNhzNBKMWcCTGxyA4OYchHnB7jMqN5NwFmEFwhmULlZfIAOEWuU3QJle4FzD8gMoACDom8q7Cfv85BQl4bqszX9jmokAIpH-EArnnJs3hlBbdfMMoo02QEbFl34UcXQjCahvDNWa_w3LTQ-86vxV9kTGfthioaD_zN_HXfsbfENSt7W53xrzkLTDo");'>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-background-dark text-slate-300 px-6 py-16 mt-auto">
+<div class="max-w-[1200px] mx-auto flex flex-col gap-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3 text-white">
+<span class="material-symbols-outlined text-primary text-3xl">local_pizza</span>
+<h2 class="text-xl font-black tracking-tight">Pizzeria Prado</h2>
+</div>
+<p class="text-sm text-slate-400 leading-relaxed">
+                            Bringing authentic Neapolitan traditions to your table. Every slice tells a story of heritage and quality.
+                        </p>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="text-white font-bold">Menu Categories</h3>
+<nav class="flex flex-col gap-2 text-sm">
+<a class="hover:text-primary transition-colors" href="#menu">Pizzas</a>
+<a class="hover:text-primary transition-colors" href="#menu">Burgers</a>
+<a class="hover:text-primary transition-colors" href="#menu">Drinks</a>
+<a class="hover:text-primary transition-colors" href="#menu">Sides &amp; Desserts</a>
+</nav>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="text-white font-bold">Visit Us</h3>
+<nav class="flex flex-col gap-2 text-sm">
+<a class="hover:text-primary transition-colors" href="#">Contact Us</a>
+<a class="hover:text-primary transition-colors" href="#">Reservations</a>
+<a class="hover:text-primary transition-colors" href="#">Locations</a>
+<a class="hover:text-primary transition-colors" href="#">Careers</a>
+</nav>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="text-white font-bold">Follow Us</h3>
+<div class="flex gap-4">
+<a class="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">social_leaderboard</span>
+</a>
+<a class="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">camera</span>
+</a>
+<a class="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">alternate_email</span>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+<p>© 2024 Pizzeria Prado. All rights reserved.</p>
+<p>Designed with passion for Italian cuisine.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+
+</body></html>
